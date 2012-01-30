@@ -1,0 +1,10 @@
+sdesc: "Index and search email messages stored in Maildir or MH folders"
+ldesc: "Index new messages incrementally - any particular message only
+gets scanned once in the lifetime of the index file. The search mode
+populates a virtual maildir (or MH) folder with symlinks which point to
+the real messages. This folder can be opened as usual in your mail program.
+The search mode is very fast. Indexing and searching works on the basis of
+words. The index file tabulates which words occur in which parts
+(particular headers + body) of which messages."
+category: Mail
+requires: cygwin libbz2_1 zlib

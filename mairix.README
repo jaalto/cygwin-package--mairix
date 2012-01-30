@@ -1,0 +1,94 @@
+mairix
+------------------------------------------
+
+Index and search email messages stored in Maildir or MH folders
+
+Index new messages incrementally - any particular message only
+gets scanned once in the lifetime of the index file. The search mode
+populates a virtual maildir (or MH) folder with symlinks which point to
+the real messages. This folder can be opened as usual in your mail program.
+The search mode is very fast. Indexing and searching works on the basis of
+words. The index file tabulates which words occur in which parts
+(particular headers + body) of which messages.
+
+Maildir is a folder format where messages are stored in separate files
+(i.e. 1 file per message). Each folder is a directory containing
+subdirectories called new, cur and tmp. The new and cur subdirectories
+contain the files with the messages in.
+
+In MH, each directory is a folder. The messages are stored directly
+inside the folder's directory, and have filenames which are integers.
+Note, from version 0.4 onwards, mairix supports MH folders too.
+
+Install notes:
+  cp /usr/share/doc/mairix-*/dot.mairixrc ~/.mairixrc
+  $EDITOR ~/.mairixrc
+  man mairixrc
+
+Runtime requirements:
+  cygwin
+  libbz2_1
+  zlib
+
+Build requirements:
+  cygwin
+  libbz2-devel
+  texinfo
+  zlib
+
+Canonical homepage:
+  http://www.rc0.org.uk/mairix
+  http://www.sourceforge.net/projects/mairix
+  http://packages.debian.org/mairix
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+  <mairix-users@lists.sourceforge.net>
+  https://lists.sourceforge.net/lists/listinfo/mairix-users
+
+Forum / Wiki:
+  http://sourceforge.net/forum/?group_id=172230
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Richard P. Curnow <rc@rc0.org.uk>, <rc_rc0@users.sf.net>
+  Bugs: http://sourceforge.net/tracker/?atid=860936&group_id=172230&func=browse
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack mairix-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./mairix*.sh all
+
+-------------------------------------------
+
+Files included in the binary distro:
+  See content of *.tar.gz
+
+------------------
+
+Port Notes:
+- mairix.1: No man page. Copied from Debian.
+- Makefile: rewrote install target.
+- dfasyn/ directory contains some code that is not related to mairix.
+  That directory is not used in any way.
+
+----- version 0.21-1 -----
+- Initial release 2007-10-01 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
