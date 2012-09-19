@@ -26,15 +26,13 @@ Install notes:
   man mairixrc
 
 Runtime requirements:
-  cygwin
   libbz2_1
-  zlib
+  zlib0
 
 Build requirements:
-  cygwin
   libbz2-devel
   texinfo
-  zlib
+  zlib-devel
 
 Canonical homepage:
   http://www.rc0.org.uk/mairix
@@ -77,18 +75,19 @@ Build instructions:
 -------------------------------------------
 
 Files included in the binary distro:
-  See content of *.tar.gz
+  See Cygwin package archive
 
 ------------------
 
 Port Notes:
-- mairix.1: No man page. Copied from Debian.
-- Makefile: rewrote install target.
 - dfasyn/ directory contains some code that is not related to mairix.
   That directory is not used in any way.
+
+----- version 0.22-1 -----
+- New upstream release 2012-09-19 Jari Aalto
 
 ----- version 0.21-1 -----
 - Initial release 2007-10-01 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2012 Jari Aalto; Licensed under GPL v2 or later
