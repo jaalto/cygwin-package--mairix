@@ -37,7 +37,7 @@ Main()
     sharedir=$root/usr/share
     mandir=$sharedir/man/man1
 
-    docdir=$(cd $root/usr/share/doc/[a-zA-Z]*-*[0-9] && pwd)
+    docdir=$(cd $root/usr/share/doc/[a-zA-Z]* && pwd)
 
     [ "$docdir" ] || return 0
 
