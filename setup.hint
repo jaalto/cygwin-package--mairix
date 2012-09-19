@@ -7,4 +7,4 @@ The search mode is very fast. Indexing and searching works on the basis of
 words. The index file tabulates which words occur in which parts
 (particular headers + body) of which messages."
 category: Mail
-requires: cygwin libbz2_1 zlib
+requires: libbz2_1 zlib0
