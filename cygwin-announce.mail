@@ -5,7 +5,7 @@ Subject: Updated: mairix 0.22-1 -- Index and search email messages stored in Mai
 PACKAGE DESCRIPTION
 ===================
 
-Homepage: http://www.rc0.org.uk/mairix
+Homepage: http://freecode.com/projects/mairix
 License : GPL
 
 Index new messages incrementally - any particular message only
@@ -19,7 +19,7 @@ words. The index file tabulates which words occur in which parts
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See http://www.rc0.org.uk/mairix
+See http://www.rc0.org.uk/mairix for release notes.
 
 INSTALL OR UPGRADE NOTES
 ========================
